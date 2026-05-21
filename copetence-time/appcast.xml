@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sparkle update feed for the coPetence Time helper.
+
+  On each release it is copied into the public coPetence/homebrew-tap repo 
+  at `copetence-time/appcast.xml`, which is what Info.plist's SUFeedURL points 
+  at. DMGs are GitHub Release assetson that same public repo, with app-prefixed 
+  tags (copetence-time-<ver>).
+
+  Each release adds one <item>; release.sh prints the `sparkle:edSignature`
+  and byte `length`. Keep newest-first; old items may stay so users on old
+  versions still see an upgrade path.
+-->
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>coPetence Time</title>
+    <description>Updates for the coPetence Time macOS helper.</description>
+    <language>en</language>
+
+    <item>
+      <title>0.1.0</title>
+      <pubDate>Wed, 21 May 2026 15:00:00 +0200</pubDate>
+      <sparkle:version>2</sparkle:version>
+      <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+      <enclosure
+        url="https://github.com/coPetence/homebrew-tap/releases/download/copetence-time-0.1.0/coPetence-Time-0.1.0.dmg"
+        sparkle:edSignature="c338a882d54e8bdcca0f1b5ff83e84139084f54680a9e7114d6fb051526f940b"
+        length="3688251"
+        type="application/octet-stream" />
+    </item>
+  </channel>
+</rss>
