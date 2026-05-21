@@ -10,7 +10,7 @@
 #   brew install --cask copetence-time
 cask "copetence-time" do
   version "0.1.0"
-  sha256 "REPLACE_WITH_DMG_SHA256"
+  sha256 "c338a882d54e8bdcca0f1b5ff83e84139084f54680a9e7114d6fb051526f940b"
 
   url "https://github.com/coPetence/homebrew-tap/releases/download/copetence-time-#{version}/coPetence-Time-#{version}.dmg"
   name "coPetence Time"
